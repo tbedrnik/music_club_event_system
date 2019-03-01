@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="semestralka.controllers.BrowseClubsWindowController">
+    <stylesheets>
+        <URL value="@/styles/mainscreen.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="browseClubsWindow" layoutX="10.0" layoutY="10.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="540.0" prefWidth="260.0" style="-fx-background-color: #ddd;">
+               <children>
+                  <Label layoutX="15.0" layoutY="27.0" prefHeight="37.0" prefWidth="231.0" text="CLUBS" textFill="#003663">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="89.0" prefHeight="37.0" prefWidth="56.0" text="Total:" textFill="#555555">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="clubs_total" layoutX="71.0" layoutY="89.0" prefHeight="37.0" prefWidth="74.0" text="xx" textFill="#003663">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="15.0" layoutY="414.0" onMouseClicked="#clubs_removeSelected" prefHeight="60.0" prefWidth="231.0" styleClass="menuPaneButton">
+                     <children>
+                        <Label layoutX="39.0" layoutY="9.0" prefHeight="43.0" prefWidth="153.0" text="Remove selected" textFill="WHITE">
+                           <font>
+                              <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="15.0" layoutY="344.0" onMouseClicked="#clubs_editSelected" prefHeight="60.0" prefWidth="231.0" styleClass="menuPaneButton">
+                     <children>
+                        <Label layoutX="58.0" layoutY="9.0" prefHeight="43.0" prefWidth="115.0" text="Edit selected" textFill="WHITE">
+                           <font>
+                              <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="15.0" layoutY="270.0" onMouseClicked="#clubs_addNewClub" prefHeight="60.0" prefWidth="231.0" styleClass="menuPaneButton">
+                     <children>
+                        <Label layoutX="55.0" layoutY="9.0" prefHeight="43.0" prefWidth="122.0" text="Add new club" textFill="WHITE">
+                           <font>
+                              <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="14.0" layoutY="489.0" onMouseClicked="#closeClubsWindow" prefHeight="37.0" prefWidth="188.0" styleClass="menuBackLink" text="Back to main screen " textFill="#555555">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <TableView fx:id="browseClubsTable" layoutX="260.0" prefHeight="540.0" prefWidth="540.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn prefWidth="152.0" text="NAME" />
+                  <TableColumn prefWidth="143.0" text="CITY" />
+                  <TableColumn prefWidth="142.0" text="STREET" />
+                  <TableColumn prefWidth="102.0" text="POSTAL CODE" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

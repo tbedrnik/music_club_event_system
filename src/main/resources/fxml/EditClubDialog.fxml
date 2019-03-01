@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="540.0" prefWidth="540.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="semestralka.controllers.EditClubDialogController">
+    <stylesheets>
+        <URL value="@/styles/mainscreen.css" />
+    </stylesheets>
+    <children>
+      <Label layoutX="184.0" layoutY="82.0" prefHeight="43.0" prefWidth="173.0" text="Edit club" textFill="#003663">
+         <font>
+            <Font name="AvenirNextLTPro-MediumCn" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input_name" layoutX="120.0" layoutY="144.0" prefHeight="60.0" prefWidth="301.0" promptText="Name" styleClass="input">
+         <font>
+            <Font name="AvenirNextLTPro-MediumCn" size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="input_street" layoutX="120.0" layoutY="211.0" prefHeight="60.0" prefWidth="301.0" promptText="Street" styleClass="input">
+         <font>
+            <Font name="AvenirNextLTPro-MediumCn" size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="input_city" layoutX="120.0" layoutY="277.0" prefHeight="60.0" prefWidth="301.0" promptText="City" styleClass="input">
+         <font>
+            <Font name="AvenirNextLTPro-MediumCn" size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="input_postalcode" layoutX="120.0" layoutY="343.0" prefHeight="60.0" prefWidth="301.0" promptText="Postal code" styleClass="input">
+         <font>
+            <Font name="AvenirNextLTPro-MediumCn" size="22.0" />
+         </font>
+      </TextField>
+      <Button fx:id="submit" layoutX="196.0" layoutY="420.0" mnemonicParsing="false" onAction="#submit" text="Save changes">
+         <font>
+            <Font name="AvenirNextLTPro-MediumCn" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="close" layoutX="472.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" styleClass="close" text="Close">
+         <font>
+            <Font name="AvenirNextLTPro-MediumCn" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

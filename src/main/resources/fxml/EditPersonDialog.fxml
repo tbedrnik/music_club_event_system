@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="540.0" prefWidth="540.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="semestralka.controllers.EditPersonDialogController">
+    <stylesheets>
+        <URL value="@/styles/mainscreen.css" />
+    </stylesheets>
+    <children>
+      <Label fx:id="editPersonLabel" alignment="CENTER" layoutX="167.0" layoutY="81.0" text="Edit person" textAlignment="CENTER" textFill="#003663">
+         <font>
+            <Font name="AvenirNextLTPro-MediumCn" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input_firstName" layoutX="120.0" layoutY="144.0" prefHeight="60.0" prefWidth="301.0" promptText="First name" styleClass="input">
+         <font>
+            <Font name="AvenirNextLTPro-MediumCn" size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="input_lastName" layoutX="120.0" layoutY="211.0" prefHeight="60.0" prefWidth="301.0" promptText="Last name" styleClass="input">
+         <font>
+            <Font name="AvenirNextLTPro-MediumCn" size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="input_email" layoutX="120.0" layoutY="277.0" prefHeight="60.0" prefWidth="301.0" promptText="Email" styleClass="input">
+         <font>
+            <Font name="AvenirNextLTPro-MediumCn" size="22.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="input_phone" layoutX="120.0" layoutY="343.0" prefHeight="60.0" prefWidth="301.0" promptText="Phone" styleClass="input">
+         <font>
+            <Font name="AvenirNextLTPro-MediumCn" size="22.0" />
+         </font>
+      </TextField>
+      <Button fx:id="submit" layoutX="208.0" layoutY="420.0" mnemonicParsing="false" onAction="#submit" text="Save changes">
+         <font>
+            <Font name="AvenirNextLTPro-MediumCn" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="close" layoutX="472.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" styleClass="close" text="Close">
+         <font>
+            <Font name="AvenirNextLTPro-MediumCn" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

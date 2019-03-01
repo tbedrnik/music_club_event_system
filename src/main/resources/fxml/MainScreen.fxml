@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="semestralka.aplikace.MainScreenController">
+   <children>
+      <Pane style="-fx-background-color: #003663;" AnchorPane.bottomAnchor="540.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="12.0" text="MUSIC CLUB EVENT SYSTEM" textFill="WHITE">
+               <font>
+                  <Font name="AvenirNextLTPro-MediumCn" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane layoutY="60.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <Pane id="browseBands" fx:id="browseBandsPane" layoutX="26.0" layoutY="26.0" onMouseClicked="#openBandsWindow" prefHeight="240.0" prefWidth="240.0" styleClass="pane" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <children>
+                  <Label alignment="CENTER" layoutY="196.0" prefHeight="30.0" prefWidth="240.0" text="BROWSE BANDS" textAlignment="CENTER" textFill="#003663">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="45.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../png/browseBands.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane id="browseClubs" fx:id="browseClubsPane" layoutX="280.0" layoutY="20.0" onMouseClicked="#openClubsWindow" prefHeight="240.0" prefWidth="240.0" styleClass="pane" AnchorPane.leftAnchor="280.0" AnchorPane.rightAnchor="280.0" AnchorPane.topAnchor="20.0">
+               <children>
+                  <Label alignment="CENTER" layoutY="196.0" prefWidth="240.0" text="BROWSE CLUBS" textAlignment="CENTER" textFill="#003663">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="45.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../png/browseClubs.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane id="browsePeople" fx:id="browsePeoplePane" layoutX="546.0" layoutY="20.0" onMouseClicked="#openPeopleWindow" prefHeight="240.0" prefWidth="240.0" styleClass="pane" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <children>
+                  <Label alignment="CENTER" layoutY="196.0" prefWidth="240.0" text="BROWSE PEOPLE" textAlignment="CENTER" textFill="#003663">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="45.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../png/browsePeople.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane id="addEvent" fx:id="addEventPane" layoutX="20.0" layoutY="286.0" onMouseClicked="#openAddEventDialog" prefHeight="240.0" prefWidth="240.0" styleClass="pane" AnchorPane.bottomAnchor="20.0">
+               <children>
+                  <Label alignment="CENTER" layoutY="196.0" prefWidth="240.0" text="ADD EVENT" textAlignment="CENTER" textFill="#003663">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="45.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../png/addEvent.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane id="addShow" fx:id="addShowPane" layoutX="280.0" layoutY="286.0" onMouseClicked="#openAddShowDialog" prefHeight="240.0" prefWidth="240.0" styleClass="pane" AnchorPane.bottomAnchor="20.0">
+               <children>
+                  <Label alignment="CENTER" layoutY="196.0" prefWidth="240.0" text="ADD SHOW" textAlignment="CENTER" textFill="#003663">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="45.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../png/addShow.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane id="sellTicket" fx:id="sellTicketPane" layoutX="540.0" layoutY="286.0" onMouseClicked="#openSellTicketDialog" prefHeight="240.0" prefWidth="240.0" styleClass="pane" AnchorPane.bottomAnchor="20.0">
+               <children>
+                  <Label alignment="CENTER" layoutY="196.0" prefWidth="240.0" text="SELL TICKET" textAlignment="CENTER" textFill="#003663">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="45.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../png/sellTicket.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      
+      <!-- browse bands -->
+      
+      <AnchorPane fx:id="browseBandsWindow" style="-fx-background-color: #fff;" translateY="540.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <Pane prefHeight="540.0" prefWidth="260.0" style="-fx-background-color: #ddd;">
+               <children>
+                  <Label layoutX="15.0" layoutY="27.0" text="BANDS" textFill="#003663">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="89.0" text="Total:" textFill="#555555">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="129.0" text="Famous: " textFill="#555555">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bands_total" layoutX="130.0" layoutY="89.0" text="XX" textFill="#003663">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bands_famous" layoutX="130.0" layoutY="129.0" text="XX" textFill="#003663">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="15.0" layoutY="414.0" onMouseClicked="#bands_removeSelected" prefHeight="60.0" prefWidth="231.0" styleClass="menuPaneButton">
+                     <children>
+                        <Label alignment="CENTER" layoutX="42.0" layoutY="16.0" text="Remove selected" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="15.0" layoutY="344.0" onMouseClicked="#bands_addNewBand" prefHeight="60.0" prefWidth="231.0" styleClass="menuPaneButton">
+                     <children>
+                        <Label alignment="CENTER" layoutX="53.0" layoutY="16.0" text="Add new band" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="15.0" layoutY="493.0" onMouseClicked="#closeBandsWindow" styleClass="menuBackLink" text="Back to main screen " textFill="#555555">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <TableView fx:id="browseBandsTable" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="bandsTableName" prefWidth="216.0" text="Name" />
+               </columns>
+            </TableView>
+         </children></AnchorPane>
+      
+      <!-- Browse People -->
+      
+      <AnchorPane fx:id="browsePeopleWindow" layoutY="60.0" style="-fx-background-color: #fff;" translateY="540.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <Pane prefHeight="540.0" prefWidth="260.0" style="-fx-background-color: #ddd;">
+               <children>
+                  <Label layoutX="15.0" layoutY="27.0" text="PEOPLE" textFill="#003663">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="89.0" text="Total:" textFill="#555555">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="132.0" text="Musicians:" textFill="#555555">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="people_total" layoutX="139.0" layoutY="89.0" text="XX" textFill="#003663">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="people_musicians" layoutX="139.0" layoutY="132.0" text="XX" textFill="#003663">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="15.0" layoutY="414.0" onMouseClicked="#people_removeSelected" prefHeight="50.0" prefWidth="231.0" styleClass="menuPaneButton">
+                     <children>
+                        <Label alignment="CENTER" layoutX="42.0" layoutY="11.0" text="Remove selected" textFill="WHITE">
+                           <font>
+                              <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="15.0" layoutY="354.0" onMouseClicked="#people_editSelected" prefHeight="50.0" prefWidth="231.0" styleClass="menuPaneButton">
+                     <children>
+                        <Label alignment="CENTER" layoutX="61.0" layoutY="11.0" text="Edit selected" textFill="WHITE">
+                           <font>
+                              <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="15.0" layoutY="294.0" onMouseClicked="#people_addNewPerson" prefHeight="50.0" prefWidth="231.0" styleClass="menuPaneButton">
+                     <children>
+                        <Label alignment="CENTER" layoutX="45.0" layoutY="11.0" text="Add new person" textFill="WHITE">
+                           <font>
+                              <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="15.0" layoutY="495.0" onMouseClicked="#closePeopleWindow" styleClass="menuBackLink" text="Back to main screen " textFill="#555555">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="people_employees" layoutX="139.0" layoutY="174.0" text="XX" textFill="#003663">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="174.0" text="Employees:" textFill="#555555">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="15.0" layoutY="234.0" onMouseClicked="#people_showDetail" prefHeight="50.0" prefWidth="231.0" styleClass="menuPaneButton">
+                     <children>
+                        <Label alignment="CENTER" layoutX="65.0" layoutY="11.0" text="Show detail" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <TableView fx:id="browsePeopleTable" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="peopleTableID" prefWidth="73.0" text="ID" />
+                <TableColumn fx:id="peopleTableFirstName" prefWidth="90.0" text="First Name" />
+                <TableColumn fx:id="peopleTableLastName" prefWidth="101.0" text="Last Name" />
+                <TableColumn fx:id="peopleTableEmail" prefWidth="141.0" text="Email" />
+                <TableColumn fx:id="peopleTablePhone" prefWidth="134.0" text="Phone" />
+              </columns>
+          </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="browseClubsWindow" style="-fx-background-color: #fff;" translateY="540.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <Pane prefHeight="540.0" prefWidth="260.0" style="-fx-background-color: #ddd;">
+               <children>
+                  <Label layoutX="15.0" layoutY="27.0" text="CLUBS" textFill="#003663">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="89.0" text="Total:" textFill="#555555">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="clubs_total" alignment="CENTER_RIGHT" layoutX="130.0" layoutY="89.0" text="XX" textAlignment="RIGHT" textFill="#003663">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="15.0" layoutY="414.0" onMouseClicked="#clubs_removeSelected" prefHeight="50.0" prefWidth="231.0" styleClass="menuPaneButton">
+                     <children>
+                        <Label alignment="CENTER" layoutX="42.0" layoutY="11.0" text="Remove selected" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="15.0" layoutY="354.0" onMouseClicked="#clubs_editSelected" prefHeight="50.0" prefWidth="231.0" styleClass="menuPaneButton">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="11.0" text="Edit selected" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="15.0" layoutY="294.0" onMouseClicked="#clubs_addNewClub" prefHeight="50.0" prefWidth="231.0" styleClass="menuPaneButton">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="11.0" text="Add new club" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="15.0" layoutY="493.0" onMouseClicked="#closeClubsWindow" styleClass="menuBackLink" text="Back to main screen " textFill="#555555">
+                     <font>
+                        <Font name="AvenirNextLTPro-MediumCn" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="15.0" layoutY="234.0" onMouseClicked="#clubs_showDetail" prefHeight="50.0" prefWidth="231.0" styleClass="menuPaneButton">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="65.0" layoutY="11.0" text="Show detail" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="AvenirNextLTPro-MediumCn" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <TableView fx:id="browseClubsTable" layoutX="260.0" prefHeight="540.0" prefWidth="540.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="clubsTableName" prefWidth="152.0" text="NAME" />
+                  <TableColumn fx:id="clubsTableCity" prefWidth="143.0" text="CITY" />
+                  <TableColumn fx:id="clubsTableStreet" prefWidth="142.0" text="STREET" />
+                  <TableColumn fx:id="clubsTablePostalcode" prefWidth="102.0" text="POSTAL CODE" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

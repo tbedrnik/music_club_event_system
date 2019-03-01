@@ -1,0 +1,76 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #ffffff;
+}
+
+.pane {
+    -fx-background-color: #e3e3e3;
+}
+
+.pane:hover {
+    -fx-background-color: #cccccc;
+}
+
+.menuPaneButton {
+    -fx-background-color: #bbbbbb;
+}
+
+.menuPaneButton:hover {
+    -fx-background-color: #999999;
+}
+
+.menuBackLink {
+    -fx-text-fill: #555555;
+}
+
+.menuBackLink:hover {
+    -fx-text-fill: #333333;
+}
+
+.button {
+    -fx-background-color: linear-gradient(#003663, #002552);
+    -fx-text-fill: #eeeeee;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#114774, #003663);
+    -fx-text-fill: #ffffff;
+}
+
+.close {
+    -fx-background-color: linear-gradient(#333333, #222222);
+    -fx-text-fill: #eeeeee;
+}
+
+.close:hover {
+    -fx-background-color: linear-gradient(#444444, #333333);
+    -fx-text-fill: #ffffff;
+}
+
+.input {
+    -fx-background-color: linear-gradient(#f2f2f2, #eeeeee);
+    -fx-border-color: transparent;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+}
+
+.choicebox {
+    -fx-background-color: linear-gradient(#f2f2f2, #eeeeee);
+    -fx-border-color: transparent;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+    -fx-font-size: 22;
+    -fx-text-fill: #003663;
+    -fx-font-family: "AvenirNextLTPro-MediumCn";
+}
+
+.input:focus {
+    -fx-border-color: #003663;
+}
+
+.input.error {
+    -fx-border-color: #f00;
+}
